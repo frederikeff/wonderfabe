@@ -101,7 +101,7 @@ export default function WobbyPage() {
       {/* Footer */}
       <footer className="border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-8 text-center text-gray-600">
-          <p className="mb-2">© 2024 Wonderfabe - WOBBY</p>
+          <p className="mb-2">&copy; 2024 Wonderfabe - WOBBY</p>
           <a href="mailto:hello@wonderfabe.com" className="text-pink-600 hover:text-pink-700">
             hello@wonderfabe.com
           </a>

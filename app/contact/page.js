@@ -75,7 +75,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Got questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+        Got questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
         </p>
       </div>
 
@@ -179,7 +179,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none bg-gray-50 hover:bg-white transition-colors"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                 </div>
 
