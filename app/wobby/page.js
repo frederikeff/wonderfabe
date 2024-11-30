@@ -65,7 +65,7 @@ export default function WobbyPage() {
         </div>
       </div>
 
-      {/* Spotify Embed */}
+      {/* MusicListener Embed */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
         <div className="bg-white rounded-xl shadow-sm p-6">
           <h2 className="text-2xl font-bold mb-4">Listen Now</h2>

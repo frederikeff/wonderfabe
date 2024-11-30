@@ -39,8 +39,8 @@ export default function TiridaPage() {
             >
               <div className="relative w-full h-[400px] overflow-hidden">
                 <Image
-                  src={item.image}
-                  alt={item.word}
+                  src={animal.image}
+                  alt={animal.word}
                   fill={true}
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -129,7 +129,7 @@ export default function TiridaPage() {
       {/* Footer */}
       <footer className="border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-8 text-center text-gray-600">
-          <p className="mb-2">© 2024 Wonderfabe - TIRIDA</p>
+          <p className="mb-2">&copy; 2024 Wonderfabe - TIRIDA</p>
           <a href="mailto:hello@wonderfabe.com" className="text-yellow-600 hover:text-yellow-700">
             hello@wonderfabe.com
           </a>

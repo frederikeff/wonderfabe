@@ -1,7 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Music, Play, Pause, Clock, Sparkles, Podcast } from 'lucide-react';
+import { 
+  Music, 
+  Play, 
+  Pause, 
+  Clock, 
+  Sparkles, 
+  Podcast 
+} from 'lucide-react';
+
 import { songSeries } from './data';
 import NewsletterPopup from '@/components/NewsletterPopup';
 import Image from 'next/image';
