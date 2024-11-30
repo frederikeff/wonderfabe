@@ -6,16 +6,16 @@ import { Mic, MessageCircle, Music } from 'lucide-react';
 export default function WobbyPage() {
   const testimonials = [
     {
-      quote: &quot;WOBBY changed how I think about relationships!&quot;,
-      author: &quot;Happy Listener&quot;
+      quote: "WOBBY changed how I think about relationships!",
+      author: "Happy Listener"
     },
     {
-      quote: &quot;AI wisdom meets real talk - brilliant!&quot;,
-      author: &quot;Podcast Fan&quot;
+      quote: "AI wisdom meets real talk - brilliant!",
+      author: "Podcast Fan"
     },
     {
-      quote: &quot;Funny, insightful, and surprisingly deep&quot;,
-      author: &quot;Regular Subscriber&quot;
+      quote: "Funny, insightful, and surprisingly deep",
+      author: "Regular Subscriber"
     }
   ];
 
