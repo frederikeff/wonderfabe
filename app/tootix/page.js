@@ -1,9 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Music, Play, Pause, Clock, Sparkles, Spotify } from 'lucide-react';
+import { Music, Play, Pause, Clock, Sparkles } from 'lucide-react';
+import { Podcast } from 'lucide-react';
 import { songSeries } from './data';
 import NewsletterPopup from '@/components/NewsletterPopup';
+
+import Image from 'next/image';
 
 export default function TootixPage() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -32,11 +35,13 @@ export default function TootixPage() {
             <div className="grid md:grid-cols-3 gap-6 p-6">
               {/* Series Cover */}
               <div className="md:col-span-1">
-                <div className="aspect-square rounded-xl overflow-hidden">
-                  <img
-                    src={series.coverImage}
-                    alt={series.title}
-                    className="w-full h-full object-cover"
+                <div className="relative aspect-square rounded-xl overflow-hidden">
+                  <Image
+                   src={series.coverImage}
+                   alt={series.title}
+                   fill={true}
+                   className="object-cover"
+                   sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
               </div>
@@ -70,11 +75,13 @@ export default function TootixPage() {
                         key={song.title}
                         className="bg-gray-50 rounded-xl p-4 flex gap-4 items-center"
                       >
-                        <div className="flex-shrink-0 w-16 h-16 rounded-x1 overflow-hidden">
-                          <img
+                        <div className="flex-shrink-0 relative w-16 h-16 rounded-xl overflow-hidden">
+                          <Image
                             src={song.coverImage}
                             alt={song.title}
-                            className="w-full h-full object-cover"
+                            fill={true}
+                            className="object-cover"
+                            sizes="64px"
                           />
                         </div>
                         <div className="flex-grow">
@@ -100,7 +107,7 @@ export default function TootixPage() {
                             rel="noopener noreferrer"
                             className="flex-shrink-0 text-green-500 hover:text-green-600"
                           >
-                            <Spotify className="w-6 h-6" />
+                            <Podcast className="w-6 h-6" />
                           </a>
                         )}
                       </div>

@@ -5,6 +5,8 @@ import { BookOpen, PenTool, Library, ScrollText } from 'lucide-react';
 import NewsletterPopup from '@/components/NewsletterPopup';
 import { publishedBooks, upcomingWorks, categories } from './data';
 
+import Image from 'next/image';
+
 export default function LinglexPage() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -35,10 +37,12 @@ export default function LinglexPage() {
               >
                 {/* Book Cover */}
                 <div className="relative aspect-[3/4] w-full overflow-hidden bg-gray-100">
-                  <img
+                  <Image
                     src={book.image}
                     alt={book.title}
-                    className="w-full h-full object-cover"
+                    fill={true}
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300">

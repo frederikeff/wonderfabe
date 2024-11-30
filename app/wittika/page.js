@@ -4,6 +4,8 @@ import React from 'react';
 import { BookOpen, ShoppingBag, Type } from 'lucide-react';
 import { wordArtItems, collections } from './data';
 
+import Image from 'next/image';
+
 export default function WittikaPage() {
   // Add error handling for data
   const items = wordArtItems || [];
@@ -35,11 +37,13 @@ export default function WittikaPage() {
             >
                 {/* Image Container */}
                 <div className="relative aspect-[3/2] w-full overflow-hidden">
-                <img
+                  <Image
                     src={item.image}
                     alt={item.word}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                    fill={true}
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 {/* Overlay - Fully hidden by default, visible on hover */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500" />
                 </div>

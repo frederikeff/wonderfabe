@@ -32,7 +32,7 @@ const ConfirmationModal = ({ isOpen, onClose, brand }) => {
           <h3 className="text-2xl font-bold mb-4">Almost there!</h3>
           <div className="space-y-4 text-gray-600">
             <p>
-              We've sent you a confirmation email. Please check your inbox (and spam folder) to complete your subscription.
+              We&apos;ve sent you a confirmation email. Please check your inbox (and spam folder) to complete your subscription.
             </p>
             <p className="text-sm">
               <strong>Tip:</strong> To ensure you receive our updates:
@@ -40,7 +40,7 @@ const ConfirmationModal = ({ isOpen, onClose, brand }) => {
             <ul className="text-sm text-left list-disc pl-6 space-y-2">
               <li>Add hello@wonderfabe.com to your contacts</li>
               <li>Move our confirmation email from spam to inbox if needed</li>
-              <li>Mark our emails as "not spam" if they appear there</li>
+              <li>Mark our emails as &quot;not spam&quot; if they appear there</li>
             </ul>
           </div>
         </div>

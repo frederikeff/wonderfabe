@@ -14,6 +14,8 @@ import {
 } from 'lucide-react';
 import { series } from './data';
 
+import Image from 'next/image';
+
 import NewsletterPopup from '@/components/NewsletterPopup';
 
 // Helper function to get the correct icon
@@ -60,11 +62,13 @@ export default function SnapixPage() {
             <div className="grid md:grid-cols-3 gap-6">
               {/* Cover Image */}
               <div className="md:col-span-1 relative aspect-[2/3] overflow-hidden">
-                <img
+                <Image
                   src={show.coverImage}
                   alt={`${show.title} Cover`}
-                  className="w-full h-full object-cover"
-                />
+                  fill={true}
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />  
               </div>
 
               {/* Content */}

@@ -6,16 +6,16 @@ import { Mic, MessageCircle, Music } from 'lucide-react';
 export default function WobbyPage() {
   const testimonials = [
     {
-      quote: "WOBBY changed how I think about relationships!",
-      author: "Happy Listener"
+      quote: &quot;WOBBY changed how I think about relationships!&quot;,
+      author: &quot;Happy Listener&quot;
     },
     {
-      quote: "AI wisdom meets real talk - brilliant!",
-      author: "Podcast Fan"
+      quote: &quot;AI wisdom meets real talk - brilliant!&quot;,
+      author: &quot;Podcast Fan&quot;
     },
     {
-      quote: "Funny, insightful, and surprisingly deep",
-      author: "Regular Subscriber"
+      quote: &quot;Funny, insightful, and surprisingly deep&quot;,
+      author: &quot;Regular Subscriber&quot;
     }
   ];
 
@@ -41,7 +41,7 @@ export default function WobbyPage() {
           <h2 className="text-2xl font-bold mb-4">About WOBBY</h2>
           <p className="text-gray-600">
             Join WOBBY as we navigate the wild world of relationships with help from 
-            the top AI models. Expect laughter, insights, and plenty of "aha" moments!
+            the top AI models. Expect laughter, insights, and plenty of &quot;aha&quot; moments!
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export default function WobbyPage() {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white rounded-xl shadow-sm p-6 text-center">
               <MessageCircle size={32} className="mx-auto mb-4 text-pink-500" />
-              <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
+              <p className="text-gray-600 mb-4 italic">&quot;{testimonial.quote}&quot;</p>
               <p className="font-bold text-gray-800">{testimonial.author}</p>
             </div>
           ))}

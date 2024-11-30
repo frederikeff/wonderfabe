@@ -41,7 +41,7 @@ export default function ContactPage() {
       if (result.success) {
         setSubmitStatus({
           success: true,
-          message: 'Thank you for your message! We\'ll get back to you soon.'
+          message: 'Thank you for your message! We&apos;ll get back to you soon.'
         });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {

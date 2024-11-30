@@ -4,6 +4,8 @@ import React from 'react';
 import { Palette, BookOpen, ShoppingBag } from 'lucide-react';
 import { animals, shopItems, books } from './data';
 
+import Image from 'next/image';
+
 export default function TiridaPage() {
   const handleShopClick = (link) => {
     if (link) {
@@ -36,10 +38,12 @@ export default function TiridaPage() {
               className={`${animal.color} rounded-xl shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md`}
             >
               <div className="relative w-full h-[400px] overflow-hidden">
-                <img
-                  src={animal.image}
-                  alt={animal.name}
-                  className="w-full h-full object-cover object-center"
+                <Image
+                  src={item.image}
+                  alt={item.word}
+                  fill={true}
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-6 bg-white/90 backdrop-blur-sm">
@@ -55,12 +59,14 @@ export default function TiridaPage() {
       <div className="max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-3xl font-bold mb-8 text-center">Featured Collection</h2>
         <div className="bg-yellow-50 rounded-xl shadow-sm p-6">
-          <div className="aspect-[2/1] w-full overflow-hidden rounded-lg mb-6">
-            <img
-              src="/images/tiridacollection.png"
-              alt="TIRIDA Collection"
-              className="w-full h-full object-cover"
-            />
+          <div className="relative aspect-[2/1] w-full overflow-hidden rounded-lg mb-6">
+            <Image
+               src="/images/tiridacollection.png"
+               alt="TIRIDA Collection"
+              fill={true}
+              className="object-cover"
+              sizes="(max-width: 1200px) 100vw, 1200px"
+           />
           </div>
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-2">The TIRIDA Family</h3>
