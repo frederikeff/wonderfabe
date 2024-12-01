@@ -22,6 +22,10 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        {/* Other meta tags and head content */}
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+      </head>
       <body>
         {/* Navigation Header */}
         <nav className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50">
